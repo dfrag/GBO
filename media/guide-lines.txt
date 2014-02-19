@@ -1,0 +1,1 @@
+all images for the slider need to be 140px in height. No more and no less, this is to ensure that the bar that contains them is a total of 150px heigh.
