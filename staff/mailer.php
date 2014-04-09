@@ -1,7 +1,7 @@
 <?php
 /* Set e-mail recipient */
 $myemail = "jonathan.price@creation.me.uk";
-$subject = "New signup on BGO site";
+$subject = "New signup on GBO site";
 
 /* Check all form inputs using check_input function */
 $staffname = check_input($_POST['staffname'], "Enter staff members name.");
@@ -38,7 +38,7 @@ Introduced By: $intro
 mail($myemail, $subject, $message);
 
 /* Redirect visitor to the thank you page */
-header('Location: http://getbonline.co.uk/gbo/resources/index.html');
+header('Location: http://getbonline.co.uk/index.html');
 exit();
 
 /* Functions we used */
@@ -61,7 +61,7 @@ function show_error($myError)
 <head> 
     <title>Get Bridgend Online</title>
     <meta charset="utf-8">
-    <link href="http://getbonline.co.uk/gbo/css/style.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="http://getbonline.co.uk/css/style.css" media="screen" rel="stylesheet" type="text/css"/>
     <link rel="favicon" href="favicon.ico">
 </head>
 <body>
@@ -73,16 +73,16 @@ function show_error($myError)
         <div id='page'>
             <!-- logo -->
             <div id='logo'>
-                <img src='http://getbonline.co.uk/gbo/media/logo.png' />
+                <img src='http://getbonline.co.uk/media/logo.png' />
             </div>
             <!-- logo end -->
             <!-- content -->
             <div id='content'>
                 <div class='article'>
                     <h1>Error!</h1>
-                    <p>Please correct the following error:</p>
+    				<p>The following error has happened, please write down the error and send it to <a href="mailto:griffiths.neil@gmail.com?subject=Error with GBO site.">griffiths.neil@gmail.com</a>:</p>
                     <strong><?php echo $myError; ?></strong>
-					<p>Hit the back button and try again</p>
+					<p>Please click on the back button and try again!</p>
                     <!--<div id='toplink'><a href="index.html#top">To top of page.</a></div>-->
                 </div>
             </div>
