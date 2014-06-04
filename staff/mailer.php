@@ -10,7 +10,6 @@ $firstname = check_input($_POST['firstname'], "Enter your first name.");
 $lastname = check_input($_POST['lastname'], "Enter your second name.");
 $dob = check_input($_POST['dob'], "Enter your date of birth.");
 $postc = check_input($_POST['postc'], "Enter your current post code.");
-$intro = check_input($_POST['intro'], "Enter the name of the person who introduced you.");
 
 /* If e-mail is not valid show error message */
 /*if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))*/
@@ -31,7 +30,6 @@ First Name: $firstname
 Last Name: $lastname
 Date of Birth: $dob
 Post Code: $postc
-Introduced By: $intro
 ";
 
 /* Send the message using mail() function */
@@ -88,7 +86,7 @@ function show_error($myError)
             </div>
             <!-- content end -->
             <div id='foot'>
-                <h6><a href="http://www.dfdd.co.uk" target="_blank">Created by DFDD.</a></h6>
+                <h6><a href="http://www.nextlevelwebstudio.co.uk" target="_blank">Created by Next Level Web Studio.</a></h6>
             </div>
         </div>
         <!-- page end -->
